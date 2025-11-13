@@ -527,9 +527,9 @@ st.stop()                     # Detener ejecución
 
 ## 👥 Team Members - Grupo 2
 
-- Mauricio
-- Thaty
-- [Agregar más integrantes]
+- Gustavo
+- Thatyana
+- Alex
 
 ---
 
