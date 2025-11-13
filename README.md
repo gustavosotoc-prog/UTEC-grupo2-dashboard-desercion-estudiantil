@@ -1,4 +1,4 @@
-# 📊 UTEC - Grupo 2: Dashboard de Deserción Estudiantil
+#  UTEC - Grupo 2: Dashboard de Deserción Estudiantil
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/built%20with-streamlit-orange)
@@ -9,18 +9,18 @@ Este proyecto fue desarrollado por **Grupo 2** de **UTEC** como parte de un curs
 
 ---
 
-## 🚀 Características Principales
+##  Características Principales
 
-- ✅ **5 Secciones de Análisis** con visualizaciones especializadas
-- ✅ **Filtros Interactivos** por múltiples variables demográficas y académicas
-- ✅ **20+ Visualizaciones** (gráficos de barras, pie, líneas, scatter)
-- ✅ **Métricas en Tiempo Real** según filtros aplicados
-- ✅ **Diseño Responsivo** con layout de múltiples columnas
+-  **5 Secciones de Análisis** con visualizaciones especializadas
+-  **Filtros Interactivos** por múltiples variables demográficas y académicas
+-  **20+ Visualizaciones** (gráficos de barras, pie, líneas, scatter)
+-  **Métricas en Tiempo Real** según filtros aplicados
+-  **Diseño Responsivo** con layout de múltiples columnas
 
 
 ---
 
-## 🗂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 ├── proyecto_python.py           # Aplicación principal Streamlit
@@ -32,9 +32,9 @@ Este proyecto fue desarrollado por **Grupo 2** de **UTEC** como parte de un curs
 
 ---
 
-## 📊 Secciones del Dashboard
+##  Secciones del Dashboard
 
-### 1️⃣ **Perfil Sociodemográfico del Estudiante**
+###  **Perfil Sociodemográfico del Estudiante**
 Análisis de características demográficas:
 - Distribución por **estado civil**
 - Análisis por **género** (Masculino/Femenino)
@@ -51,7 +51,7 @@ Análisis de características demográficas:
 
 ---
 
-### 2️⃣ **Perfil Académico de Ingreso**
+###  **Perfil Académico de Ingreso**
 Evaluación de características al ingresar:
 - **Distribución por rango de notas** de ingreso (9.5-19)
 - **Nivel educativo al ingreso**
@@ -64,7 +64,7 @@ Evaluación de características al ingresar:
 
 ---
 
-### 3️⃣ **Perfil Académico de Estudio**
+###  **Perfil Académico de Estudio**
 Análisis del desempeño durante los estudios:
 - **Distribución de notas promedio** (1er y 2do año)
 - **Número de cursos aprobados** por año
@@ -75,7 +75,7 @@ Análisis del desempeño durante los estudios:
 
 ---
 
-### 4️⃣ **Situación Académica por Variables Demográficas**
+###  **Situación Académica por Variables Demográficas**
 Relación entre factores demográficos y resultados académicos:
 - Situación académica por **estado civil**
 - Situación académica por **género**
@@ -90,7 +90,7 @@ Relación entre factores demográficos y resultados académicos:
 
 ---
 
-### 5️⃣ **Situación Académica por Variables Académicas**
+###  **Situación Académica por Variables Académicas**
 Relación entre factores académicos y deserción:
 - Situación por **facultad**
 - Situación por **nivel educativo de ingreso**
@@ -103,7 +103,7 @@ Relación entre factores académicos y deserción:
 
 ---
 
-## 🧪 Instrucciones de Instalación
+##  Instrucciones de Instalación
 
 ### 1. Validar instalación de Python
 Asegúrate de tener **Python 3.8+** instalado:
@@ -144,7 +144,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📦 Dependencias Principales
+##  Dependencias Principales
 
 ```txt
 streamlit==1.32.0
@@ -158,7 +158,7 @@ openpyxl==3.1.2
 
 ---
 
-## ▶️ Cómo Usar el Dashboard
+##  Cómo Usar el Dashboard
 
 ### 1. Preparar los datos
 
@@ -182,14 +182,14 @@ streamlit run "C:\Users\TU_USUARIO\ruta\al\proyecto\proyecto_python.py"
 
 ### 3. Navegar por el Dashboard
 
-1. 🌐 Se abrirá automáticamente en `http://localhost:8501`
-2. 🎯 Usa el **menú lateral izquierdo** para seleccionar la sección
-3. 🔧 Aplica **filtros** según tus necesidades
-4. 📈 Observa cómo las visualizaciones se actualizan en tiempo real
+1.  Se abrirá automáticamente en `http://localhost:8501`
+2.  Usa el **menú lateral izquierdo** para seleccionar la sección
+3.  Aplica **filtros** según tus necesidades
+4.  Observa cómo las visualizaciones se actualizan en tiempo real
 
 ---
 
-## 🎨 Tipos de Visualizaciones
+##  Tipos de Visualizaciones
 
 | Tipo de Gráfico | Librería Usada | Uso Principal |
 |-----------------|----------------|---------------|
@@ -203,7 +203,7 @@ streamlit run "C:\Users\TU_USUARIO\ruta\al\proyecto\proyecto_python.py"
 
 ---
 
-## 🔍 Análisis Técnico del Código
+##  Análisis Técnico del Código
 
 ### **Arquitectura del Dashboard**
 
@@ -427,7 +427,7 @@ for variable, datos_var in df_rangos.groupby("Variable_Objetivo"):
 
 ---
 
-## 📈 Estructura de Datos Esperada
+##  Estructura de Datos Esperada
 
 El archivo `nuevadata1.xlsx` debe contener las siguientes columnas:
 
@@ -455,7 +455,7 @@ El archivo `nuevadata1.xlsx` debe contener las siguientes columnas:
 
 ---
 
-## 🎓 Conceptos de Python Aplicados
+##  Conceptos de Python Aplicados
 
 | Concepto | Aplicación en el Proyecto |
 |----------|---------------------------|
@@ -472,7 +472,7 @@ El archivo `nuevadata1.xlsx` debe contener las siguientes columnas:
 
 ---
 
-## 🔧 Funciones Clave de Streamlit
+##  Funciones Clave de Streamlit
 
 ```python
 # Layout
@@ -500,32 +500,32 @@ st.stop()                     # Detener ejecución
 
 ---
 
-## 💡 Mejoras Posibles
+##  Mejoras Posibles
 
 ### **Funcionalidades:**
-1. ✨ **Exportar reportes** a PDF/Excel
-2. 📊 **Comparador de cohortes** (año de ingreso)
-3. 🤖 **Modelo predictivo** de deserción con ML
-4. 📧 **Sistema de alertas** para riesgo de deserción
-5. 🔄 **Actualización automática** de datos
+1.  **Exportar reportes** a PDF/Excel
+2.  **Comparador de cohortes** (año de ingreso)
+3.  **Modelo predictivo** de deserción con ML
+4.  **Sistema de alertas** para riesgo de deserción
+5.  **Actualización automática** de datos
 
 ### **Visualizaciones:**
-1. 📍 **Mapa geográfico** de origen de estudiantes
-2. 🎯 **Heatmap** de correlaciones
-3. 📊 **Dashboard ejecutivo** con KPIs principales
-4. 🌊 **Sankey diagram** de flujo estudiantil
-5. ⏱️ **Serie temporal** de deserción por semestre
+1.  **Mapa geográfico** de origen de estudiantes
+2.  **Heatmap** de correlaciones
+3.  **Dashboard ejecutivo** con KPIs principales
+4.  **Sankey diagram** de flujo estudiantil
+5.  **Serie temporal** de deserción por semestre
 
 ### **Técnicas:**
-1. 🗃️ **Base de datos** (PostgreSQL/SQLite)
-2. ⚡ **Caché de datos** con `@st.cache_data`
-3. 🎨 **Temas personalizados** con CSS
-4. 🔐 **Sistema de autenticación**
-5. 🌐 **Deploy en la nube** (Streamlit Cloud, Heroku)
+1.  **Base de datos** (PostgreSQL/SQLite)
+2.  **Caché de datos** con `@st.cache_data`
+3.  **Temas personalizados** con CSS
+4.  **Sistema de autenticación**
+5.  **Deploy en la nube** (Streamlit Cloud, Heroku)
 
 ---
 
-## 👥 Team Members - Grupo 2
+##  Team Members - Grupo 2
 
 - Gustavo
 - Thatyana
@@ -533,23 +533,23 @@ st.stop()                     # Detener ejecución
 
 ---
 
-## 📚 Recursos de Aprendizaje
+##  Recursos de Aprendizaje
 
 ### **Documentación Oficial:**
-- 📖 [Streamlit Docs](https://docs.streamlit.io)
-- 🐼 [Pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html)
-- 📊 [Plotly Python](https://plotly.com/python/)
-- 🎨 [Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html)
-- 📉 [Matplotlib Guide](https://matplotlib.org/stable/users/index.html)
+-  [Streamlit Docs](https://docs.streamlit.io)
+-  [Pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html)
+-  [Plotly Python](https://plotly.com/python/)
+-  [Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html)
+-  [Matplotlib Guide](https://matplotlib.org/stable/users/index.html)
 
 ### **Tutoriales Recomendados:**
-- 🎥 Streamlit: Data Apps in Python
-- 📘 Pandas for Data Analysis
-- 🎓 Data Visualization with Python
+-  Streamlit: Data Apps in Python
+-  Pandas for Data Analysis
+-  Data Visualization with Python
 
 ---
 
-## 🐛 Solución de Problemas Comunes
+##  Solución de Problemas Comunes
 
 ### **Error: "No module named 'openpyxl'"**
 ```bash
@@ -580,13 +580,13 @@ def cargar_datos():
 
 ---
 
-## 📄 Licencia
+##  Licencia
 
 Este proyecto fue desarrollado con fines académicos para UTEC.
 
 ---
 
-## 🤝 Contribuciones
+##  Contribuciones
 
 Si deseas mejorar este proyecto:
 1. Fork el repositorio
@@ -597,7 +597,7 @@ Si deseas mejorar este proyecto:
 
 ---
 
-## 📞 Contacto
+##  Contacto
 
 Para preguntas o sugerencias sobre el proyecto, contacta al **Grupo 2 de UTEC**.
 
