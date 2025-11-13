@@ -17,103 +17,10 @@ Este proyecto fue desarrollado por **Grupo 2** de **UTEC** como parte de un curs
 - ✅ **Métricas en Tiempo Real** según filtros aplicados
 - ✅ **Diseño Responsivo** con layout de múltiples columnas
 
----
-
-## 📸 Screenshots del Dashboard
-
-### **Vista 1: Perfil Académico de Ingreso**
-![Perfil Académico de Ingreso](img/screenshot_ingreso.png)
-
-**Muestra:**
-- 📊 Distribución por rango de notas de ingreso (9.5-19)
-- 🎓 Nivel educativo al ingreso (4 categorías principales)
-- 🏛️ Estudiantes por facultad (A-G con códigos alfabéticos)
-- 📝 Modalidad de postulación (74% Ingreso directo vs 26% Admisión ordinaria)
 
 ---
 
-### **Vista 2: Situación Académica por Variables Demográficas**
-![Análisis Demográfico](img/screenshot_demografico.png)
-
-**Incluye:**
-- 📈 **Métricas principales**: 4,424 estudiantes totales, 49.9% Graduados, 32.1% Desertores, 17.9% En curso
-- 👥 Situación por Estado Civil (3 categorías)
-- 🚻 Situación por Género (Masculino/Femenino)
-- 🗺️ Situación por Región (Costa, Sierra, Amazonas)
-- 🏠 Situación por estudiar fuera de residencia (Si/No)
-- 📊 Distribución por rango de edad (líneas con tendencia)
-
----
-
-### **Vista 3: Situación Académica por Variables Académicas**
-![Análisis Académico](img/screenshot_academico.png)
-
-**Visualiza:**
-- 🎯 **KPIs**: 104 estudiantes filtrados, 51.0% Graduados, 35.6% Desertores, 13.5% En curso
-- 🏛️ Situación por Facultad (barras apiladas con 3 estados)
-- 📚 Nivel educativo de ingreso (barras horizontales apiladas)
-- ✅ Número de cursos aprobados en 1er año (distribución)
-- ✅ Número de cursos aprobados en 2do año (distribución)
-- 🎂 Edad vs Cantidad de Desertores (scatter plot)
-- 📊 Situación por Rango de nota de ingreso (barras agrupadas)
-
-## 🎨 Guía Visual de Elementos del Dashboard
-
-Basado en los screenshots del proyecto, el dashboard implementa:
-
-### **📍 Barra de Navegación Lateral (Sidebar)**
-```
-┌─────────────────────────────┐
-│ Navegación                  │
-│ ─────────────────────────── │
-│ [Dropdown: Tipo de visual.] │
-│                             │
-│ 🔍 Filtros                  │
-│ ─────────────────────────── │
-│ • Nota de Ingreso: [Slider] │
-│ • Facultad: [Multiselect]   │
-│ • Estado Civil: [Multi]     │
-│ • Género: [Multi]           │
-│ • Estudia fuera: [Multi]    │
-└─────────────────────────────┘
-```
-
-### **📊 Panel Principal - Estructura**
-```
-┌──────────────────────────────────────────────────────────┐
-│  Dashboard Situación académica universitaria             │
-│  ─────────────────────────────────────────────────────   │
-│  [Subtítulo de sección]          Total Filtrados: 4,424  │
-│                                                           │
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐    │
-│  │% Grad.  │  │% Desert.│  │% En Cur.│  │  Total  │    │
-│  │ 49.9%   │  │  32.1%  │  │  17.9%  │  │  4,424  │    │
-│  └─────────┘  └─────────┘  └─────────┘  └─────────┘    │
-│                                                           │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐     │
-│  │  Gráfico 1  │  │  Gráfico 2  │  │  Gráfico 3  │     │
-│  │             │  │             │  │             │     │
-│  └─────────────┘  └─────────────┘  └─────────────┘     │
-│                                                           │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐     │
-│  │  Gráfico 4  │  │  Gráfico 5  │  │  Gráfico 6  │     │
-│  └─────────────┘  └─────────────┘  └─────────────┘     │
-└──────────────────────────────────────────────────────────┘
-```
-
-### **🎨 Paleta de Colores Utilizada**
-
-| Elemento | Color | Código Hex | Uso |
-|----------|-------|------------|-----|
-| **Graduado** | 🟦 Azul | `#4472C4` | Situación exitosa |
-| **Desertor** | 🟧 Naranja | `#ED7D31` | Alerta de deserción |
-| **En Curso** | 🟩 Verde | `#70AD47` | Estado actual |
-| **Masculino** | 🔵 Azul Royal | `royalblue` | Género |
-| **Femenino** | 🟣 Púrpura | `darkorchid` | Género |
-| **Sin Deuda** | 🟡 Dorado | `gold` | Estado financiero |
-| **Con Deuda** | 🔴 Rojo | `red` | Alerta financiera |
-
----
+## 🗂 Estructura del Proyecto
 
 ```
 ├── proyecto_python.py           # Aplicación principal Streamlit
@@ -125,151 +32,78 @@ Basado en los screenshots del proyecto, el dashboard implementa:
 
 ---
 
-## 📊 Detalles de Cada Sección del Dashboard
+## 📊 Secciones del Dashboard
 
-### 1️⃣ **Perfil Académico de Ingreso** (Screenshot 1)
+### 1️⃣ **Perfil Sociodemográfico del Estudiante**
+Análisis de características demográficas:
+- Distribución por **estado civil**
+- Análisis por **género** (Masculino/Femenino)
+- **Región de nacimiento**
+- Estudiantes que **estudian fuera de su residencia**
+- **Necesidades educativas especiales**
+- Estado de **deuda** financiera
+- **Edad al momento de inscripción**
 
-**Métrica Principal:** `104 estudiantes según nota filtrada`
-
-**Visualizaciones:**
-1. **Distribución por rango de notas** (Barras verticales)
-   - Eje X: Rangos (9.5-11, 11.1-13, 13.1-15, 15.1-17, 17.1-19)
-   - Eje Y: Cantidad de estudiantes
-   - Mayor concentración: Rango 13.1-15 (>100 estudiantes)
-
-2. **Nivel educativo al ingreso** (Barras horizontales coloreadas)
-   - 4 categorías principales
-   - Colores diferenciados por tipo
-   - Etiquetas con cantidad exacta
-
-3. **Estudiantes por facultad** (Barras con códigos alfabéticos)
-   - Facultades codificadas como A, B, C, D, E, F, G
-   - Leyenda lateral con nombres completos
-   - Facultad A es la más numerosa (~35 estudiantes)
-
-4. **Modalidad de postulación** (Gráfico circular/pie)
-   - 🔵 74.0% Ingreso directo y otros
-   - 🟠 26.0% Admisión ordinaria
-
-**Filtros activos:**
-- Slider de "Nota de Ingreso": 14.0
-- Multiselect de "Facultad": Todas seleccionadas
+**Filtros disponibles:**
+- Estado Civil (multiselect)
+- Género (multiselect)
+- Estudia fuera de residencia (multiselect)
 
 ---
 
-### 2️⃣ **Situación Académica por Variables Demográficas** (Screenshot 2)
+### 2️⃣ **Perfil Académico de Ingreso**
+Evaluación de características al ingresar:
+- **Distribución por rango de notas** de ingreso (9.5-19)
+- **Nivel educativo al ingreso**
+- Estudiantes por **facultad** (con código alfabético)
+- **Modalidad de postulación**
 
-**Métricas Principales:**
-- 📊 Total: **4,424 estudiantes**
-- 🎓 Graduados: **49.9%**
-- 🚫 Desertores: **32.1%**
-- 📚 En curso: **17.9%**
-
-**Visualizaciones:**
-
-1. **Situación por Estado Civil** (Barras apiladas)
-   - 3 Estados civiles principales
-   - Barras divididas en: Graduado, Desertor, En curso
-   - Estado civil más común: ~1800 estudiantes
-
-2. **Situación por Género** (Barras apiladas verticales)
-   - Comparación Masculino vs Femenino
-   - Cada barra muestra los 3 estados académicos
-   - Mayor población: ~2500 estudiantes en categoría dominante
-
-3. **Situación por Región** (Barras apiladas verticales)
-   - 🟡 Costa (mayor población: ~2500)
-   - 🟣 Sierra (~1000)
-   - 🟢 Amazonas (~200)
-   - Cada región dividida por situación académica
-
-4. **Situación por estudiar fuera de residencia** (Barras comparativas)
-   - 🔴 No estudian fuera (~800 y ~600)
-   - 🟢 Sí estudian fuera (~1200 y ~1300)
-   - Dividido por situación académica
-
-5. **Por rango de edad** (Gráfico de líneas)
-   - 3 líneas de tendencia (Graduado, Desertor, En curso)
-   - Eje X: Rangos de edad
-   - Mayor deserción en rangos intermedios
-   - Picos identificables en edades específicas
-
-**Filtros activos:**
-- Estado Civil: Casado, Divorciado, Soltero, Viudo
-- Género: 0 (Femenino), 1 (Masculino)
-- Estudia fuera: 0 (No), 1 (Sí)
+**Filtros disponibles:**
+- Nota de ingreso (slider numérico)
+- Facultad (multiselect)
 
 ---
 
-### 3️⃣ **Situación Académica por Variables Académicas** (Screenshot 3)
+### 3️⃣ **Perfil Académico de Estudio**
+Análisis del desempeño durante los estudios:
+- **Distribución de notas promedio** (1er y 2do año)
+- **Número de cursos aprobados** por año
+- **Situación académica actual** (Graduado/Desertor/En curso)
 
-**Métricas Principales:**
-- 📊 Total: **104 estudiantes**
-- 🎓 Graduados: **51.0%**
-- 🚫 Desertores: **35.6%**
-- 📚 En curso: **13.5%**
-
-**Visualizaciones:**
-
-1. **Situación por Facultad** (Barras apiladas verticales)
-   - Facultades A-G en eje X
-   - Altura proporcional a número de estudiantes
-   - Colores: Azul (Graduado), Naranja (Desertor), Verde (En curso)
-   - Facultad D tiene el pico más alto
-
-2. **Nivel educativo de ingreso** (Barras horizontales apiladas)
-   - 4 categorías de nivel educativo (I, II, III, IV en números romanos)
-   - Mayor concentración en nivel IV
-   - Segmentado por situación académica
-
-3. **Número de Cursos aprobados (1er año)** (Barras verticales)
-   - Rango: 0-15 cursos
-   - Mayor frecuencia: ~30 estudiantes en 8-10 cursos
-   - Distribución aproximadamente normal
-
-4. **Número de Cursos aprobados (2do año)** (Barras verticales)
-   - Similar al 1er año pero con pico en rango 6-9
-   - Altura máxima: ~35 estudiantes
-
-5. **Edad vs Cantidad de Desertores** (Scatter plot)
-   - Puntos rojos dispersos
-   - Concentración en edades 20-30 años
-   - Outliers identificables en edades mayores
-   - Eje Y: Cantidad de desertores (0-6)
-   - Eje X: Edad (18-40)
-
-6. **Situación por Rango de nota de ingreso** (Barras apiladas verticales)
-   - 4 rangos de notas en eje X
-   - Colores por situación académica
-   - Mayor población en rangos intermedios
-
-**Filtros activos:**
-- Nota de Ingreso: 13.0 (slider)
-
-## 🎯 Insights Clave del Dashboard (Basado en Screenshots)
-
-### **📈 Hallazgos Principales:**
-
-#### **Datos Demográficos (Screenshot 2):**
-1. 🎓 **Tasa de graduación cercana al 50%** - Indicador positivo de retención
-2. 🚫 **32.1% de deserción** - Área crítica de mejora
-3. 🗺️ **La región Costa concentra >50% de estudiantes** - Posible sesgo geográfico
-4. 👥 **Diferencias de género** - Patrones distintos entre M/F en deserción
-5. 🏠 **Estudiar fuera de residencia** - Correlación con situación académica
-
-#### **Perfil de Ingreso (Screenshot 1):**
-1. 📊 **Mayor concentración en notas 13-15** - Rango modal de ingreso
-2. 🏛️ **Facultad A domina en matrícula** - Necesita análisis de capacidad
-3. 📝 **74% ingresa por vía directa** - Sistema de admisión predominante
-4. 🎓 **4 niveles educativos previos** - Diversidad en formación
-
-#### **Variables Académicas (Screenshot 3):**
-1. ✅ **6-10 cursos aprobados es lo común** - Benchmark de desempeño
-2. 📉 **Deserción pico en edades 22-25** - Ventana crítica de intervención
-3. 🎯 **Notas 13-15 tienen mejor retención** - Admisión selectiva efectiva
-4. 🏛️ **Facultad D tiene altos números** - Requiere investigación específica
+**Filtro disponible:**
+- Número de cursos aprobados en 1er año (slider)
 
 ---
+
+### 4️⃣ **Situación Académica por Variables Demográficas**
+Relación entre factores demográficos y resultados académicos:
+- Situación académica por **estado civil**
+- Situación académica por **género**
+- Situación académica por **región**
+- Situación académica por **estudia fuera de residencia**
+- Situación académica por **rango de edad al inscribirse**
+
+**Métricas calculadas:**
+- % de Graduados
+- % de Desertores
+- % En curso
+
+---
+
+### 5️⃣ **Situación Académica por Variables Académicas**
+Relación entre factores académicos y deserción:
+- Situación por **facultad**
+- Situación por **nivel educativo de ingreso**
+- Situación por **cursos aprobados** (1er y 2do año)
+- **Edad vs cantidad de desertores** (scatter plot)
+- Situación por **rango de nota de ingreso**
+
+**Filtro disponible:**
+- Nota de ingreso (slider)
+
+---
+
+## 🧪 Instrucciones de Instalación
 
 ### 1. Validar instalación de Python
 Asegúrate de tener **Python 3.8+** instalado:
