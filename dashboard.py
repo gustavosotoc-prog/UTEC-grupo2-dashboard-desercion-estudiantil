@@ -15,7 +15,7 @@ st.set_page_config(
 st.title("Dashboard Situación académica universitaria")
 #st.markdown("Explora la data de situación académica")
 
-datos = pd.read_excel(r"C:\Users\MAURICIO\Desktop\PROYECTO PYTHON\UTEC-grupo2-dashboard-desercion-estudiantil\nuevadata1.xlsx", sheet_name="Sheet1")
+datos = pd.read_excel(r"nuevadata1.xlsx", sheet_name="Sheet1")
 
 # PESTAÑAS
 st.sidebar.header("Navegación")
